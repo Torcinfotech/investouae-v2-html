@@ -1,0 +1,93 @@
+body {
+    background: #e2e2e2;
+}
+
+.bg-dark {
+    background: transparent !important;
+    transition: 0.75s ease;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.bg-dark.scrolled {
+    background: #000 !important;
+}
+
+.index-logo {
+    z-index: 1;
+    height: 80px;
+    width: 100%;
+    padding: 0;
+}
+
+.navbtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.nav-gradient {
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 0, 0));
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 20%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: inherit !important;
+}
+
+.carousel-button {
+    color: white;
+    border-radius: 500px !important;
+    border: 0 !important;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.carousalimg {
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    background-image: url(./homecontent/Investobanner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section1content h3 {
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.section1content h6 {
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.section1content p {
+    padding-top: 2%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.section1sub1 {
+    border-top: 1px solid rgb(14 6 6 / 12%);
+    border-bottom: 1px solid rgb(14 6 6 / 12%);
+}
+
+.vertical-line {
+    display: inline-block;
+    border-left: 1px solid #ccc;
+    height: 125px;
+}

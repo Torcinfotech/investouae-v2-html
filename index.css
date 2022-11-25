@@ -49,16 +49,6 @@ body {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.carousalimg {
-    height: 100vh;
-    position: relative;
-    z-index: 1;
-    background-image: url(./homecontent/Investobanner.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
 .section1content h3 {
     padding-top: 10%;
     display: flex;
@@ -102,6 +92,8 @@ body {
 
 .section2 {
     background-color: #000;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -207,13 +199,18 @@ body {
 
 /* feature section4 */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+.section4 {
+    padding-bottom: 50px;
+}
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', serif;
     background: #AB47BC
-}
+} */
 
 .product {
     position: relative;
@@ -334,16 +331,36 @@ ul.colors li:nth-child(5) {
     background: #FF6D00
 }
 
-
-/* .btn {
+.btncard1 {
     display: block;
-    padding: 5px;
+    /* padding: 5px; */
     color: #fff;
-    margin: 10px 0 0;
+    /* margin: 10px 0 0; */
     width: 100%;
     font-size: 13px;
-    border-radius: 2px
-} */
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    background-color: #000 !important;
+    border-color: #000 !important;
+}
+
+.btncard2 {
+    display: block;
+    /* padding: 5px; */
+    color: #fff;
+    /* margin: 10px 0 0; */
+    width: 100%;
+    font-size: 13px;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    background-color: #000 !important;
+    border-color: #000 !important;
+    b
+}
 
 .horizo-line {
     /* display: inline-block; */
@@ -354,5 +371,69 @@ ul.colors li:nth-child(5) {
 .vertical-line-card {
     display: inline-block;
     border-left: 1px solid #ccc;
+    height: 50px;
+}
+
+.button-card-section5 {
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    padding-bottom: 5px;
+    z-index: 1;
+}
+
+.button-card-section5sub {
+    /* background: black; */
+    margin: auto;
+    width: 80%;
+    border-radius: 100px;
+}
+
+.section6content {
+    background-color: #f4f4f4;
+}
+
+.section6heading {
+    padding-top: 100px;
+}
+
+.section6content h3 {
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.section6content h6 {
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem !important;
+}
+
+.section6content p {
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.section6sub1 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.section6sub1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vertical-line-section6 {
+    display: inline-block;
+    border-left: 3px solid rgb(0, 0, 0);
     height: 50px;
 }

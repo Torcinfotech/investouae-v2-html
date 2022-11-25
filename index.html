@@ -13,14 +13,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <style>
-
+        .carousalimg {
+            height: 100vh;
+            position: relative;
+            z-index: 1;
+            background-image: url(./homecontent/Investobanner.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
     </style>
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-md fixed-top navbar-dark nav-gradient pb-0 pt-0">
-        <a class="navbar-brand pb-0 pt-0 ml-5" href="#"><img class="index-logo" src="/homecontent/logo2.png" alt=""></a>
+        <a class="navbar-brand pb-0 pt-0 ml-5" href="#"><img class="index-logo" src="./homecontent/logo2.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -230,15 +238,15 @@
 
 
     <section>
-        <div class="row section2">
-            <div class="col-xl-6 col-12 align-self-center">
+        <div class="row section2 m-0">
+            <div class="col-xl-6 col-12 p-0 m-0 align-self-center">
                 <div class="container w-75 py-5 py-sm-0">
                     <h1 class="text-white">LEASEHOLD PROPERTY VS FREEHOLD PROPERTY</h1>
                     <p class="text-white">The most attractive feature of commercial real estate is its high-income potential, making it an enticing investment option for investors with a risk appetite. Historical evidence suggests that commercial buildings outperform rental
                         properties and other real estate investments in terms of returns. From this video, you can learn the properties, leasehold, and freehold properties and choose what works best for you</p>
                 </div>
             </div>
-            <div class="col-12 col-xl-6 ">
+            <div class="col-12 col-xl-6 m-0 p-0">
                 <div class="embed-responsive-div">
                     <div class="embed-responsive embed-responsive-16by9">
                         <video autoplay loop controls muted preload="auto" class="embed-responsive-item">
@@ -258,8 +266,8 @@
 
 
 
-    <section style="height: 100vh;">
-        <div class="container">
+    <section>
+        <div class="container section4">
             <div class="pt-5 pb-5" style="display: flex; align-items: center; ">
                 <h1>FEATURED PROPOSALS</h1>
                 <hr style="height: 1px;">
@@ -270,19 +278,73 @@
                 <div class="item bg-danger ">
                     <div class="product">
                         <div class="imgbox"> <img src="./homecontent/Investobanner.jpg"> </div>
+                        <div class="button-card-section5 w-100 ">
+                            <div class="button-card-section5sub" style="display: flex; justify-content: space-around;">
+                                <button class="btn btn-primary btncard1">Buy Now</button>
+                                <button class="btn btn-primary btncard2">Buy Now</button>
+                            </div>
+                        </div>
                         <div class="specifies">
                             <h2>INVEST IN FREEHOLD COMMERCIAL LANDS IN DUBAI </h2><br>
                             <div class="section5subheading"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea natus, asperiores est maxime nesciunt assumenda provident placeat perspiciatis porro velit quaerat at odio id, ratione quibusdam laborum temporibus animi harum.</span></div>
-                            <!-- <div class="price">$1500</div> <label>Size</label> -->
                             <ul style="justify-content: space-evenly; border-bottom: 1px solid;">
                                 <li class="my-auto">10MM</li>
                                 <span class="vertical-line-card  mt-1 mb-2 d-none d-xl-block"></span>
                                 <li class="my-auto">20MM</li>
-                                <!-- <li>30MM</li>
-                                <li>40MM</li>
-                                <li>50MM</li> -->
                             </ul>
-                            <!-- <label>Colors</label> -->
+                            <label>Colors</label>
+                            <ul class="justify-content-between">
+                                <li>Minimum Investment</li>
+                                <li style="float: right;">1000 AED</li>
+                            </ul>
+                            <ul class="justify-content-between">
+                                <li>Period of Investment</li>
+                                <li>5 Year</li>
+                            </ul>
+                            <ul class="justify-content-between">
+                                <li>Verified</li>
+                                <li>Yes</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section>
+        <div class="container section4">
+            <div class="pt-5 pb-5" style="display: flex; align-items: center; ">
+                <h1>COMPLETED PROPOSALS</h1>
+                <hr style="height: 1px;">
+                <a class="text-decoration-none" href="">view more</a>
+            </div>
+            <div class="owl-carousel owl-theme">
+
+                <div class="item bg-danger ">
+                    <div class="product">
+                        <div class="imgbox"> <img src="./homecontent/Investobanner.jpg"> </div>
+                        <div class="button-card-section5 w-100 ">
+                            <div class="button-card-section5sub" style="display: flex; justify-content: space-around;">
+                                <button class="btn btn-primary btncard1">Buy Now</button>
+                                <button class="btn btn-primary btncard2">Buy Now</button>
+                            </div>
+                        </div>
+                        <div class="specifies">
+                            <h2>INVEST IN FREEHOLD COMMERCIAL LANDS IN DUBAI </h2><br>
+                            <div class="section5subheading"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea natus, asperiores est maxime nesciunt assumenda provident placeat perspiciatis porro velit quaerat at odio id, ratione quibusdam laborum temporibus animi harum.</span></div>
+                            <ul style="justify-content: space-evenly; border-bottom: 1px solid;">
+                                <li class="my-auto">10MM</li>
+                                <span class="vertical-line-card  mt-1 mb-2 d-none d-xl-block"></span>
+                                <li class="my-auto">20MM</li>
+                            </ul>
+                            <label>Colors</label>
                             <ul class="justify-content-between">
                                 <li>Minimum Investment</li>
                                 <li style="float: right;">1000 AED</li>
@@ -297,6 +359,7 @@
                             </ul>
                             <button class="btn btn-primary">Buy Now</button>
                         </div>
+                        <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
 
@@ -306,17 +369,81 @@
     </section>
 
 
+    <div class="container-fluid section6content">
+        <div class="section6heading text-center">
+            <p class="mx-auto w-25">Experts growth</p>
+            <h5 class="mx-auto w-75">Our Company Growth</h5>
+            <h2>We have grown strength over the past 2 years.</h2>
 
-    <section>
+        </div>
+        <div>
+            <div class="container-fluid section6sub1 w-75">
+                <div class="row" style="justify-content: space-evenly;">
+                    <div class="col-xl-2 col-md-4 col-12 d-flex p-0 justify-content-center">
+                        <div>
+                            <img height="50px" width="50px" src="/homecontent/Icon/1.png" alt="">
+                            <h6>100%</h6>
+                            <p>GUARANTEED ROI</p>
+                        </div>
+                        <!-- <span class="vertical-line-section6 my-auto p-2 d-none d-md-block"></span> -->
+                    </div>
+                    <div class="vertical-line-section6 my-auto p-2 d-none d-md-block"></div>
+                    <div class="col-xl-2 col-md-4 col-12 d-flex p-0 justify-content-center">
+                        <div>
+                            <img height="50px" width="50px" src="/homecontent/Icon/1.png" alt="">
+                            <h6>100%</h6>
+                            <p>NUMBER OF INVESTORS</p>
+                        </div>
+                        <!-- <span class="vertical-line-section6 my-auto p-2 d-none d-md-block"></span> -->
+                    </div>
+                    <div class="vertical-line-section6 my-auto p-2 d-none d-xl-block"></div>
+                    <div class="col-xl-2 col-md-4 col-12 d-flex p-0 justify-content-center">
+                        <div>
+                            <img height="50px" width="50px" src="/homecontent/Icon/3.png" alt="">
+                            <h6>43</h6>
+                            <p>YEARS OF TRUST</p>
+                        </div>
 
-        <div class="marquee">
-            <ul class="marquee-content">
-                <li><i class=""></i>a</li>
-                <li><i class=""></i>b</li>
-            </ul>
+                    </div>
+                    <div class="vertical-line-section6 my-auto p-2 d-none d-md-block"></div>
+                    <div class="col-xl-2 col-md-4 col-12 d-flex p-0 justify-content-center">
+                        <div>
+                            <img height="50px" width="50px" src="/homecontent/Icon/4.png" alt="">
+                            <h6>100</h6>
+                            <p>CAPITAL SECURITY</p>
+                        </div>
+                    </div>
+                    <div class="vertical-line-section6 my-auto p-2 d-none d-xl-block"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid section7content">
+        <div class="section6heading text-center">
+            <h3 class="mx-auto w-75">Diversify your portfolio</h3>
+            <p class="mx-auto w-25">Discover thousands of assets, share ideas, disscuss strategies and beyond</p>
         </div>
 
-    </section>
+        <section>
+
+            <div class="marquee">
+                <ul class="marquee-content text-white">
+                    <li style="color: white;"><i></i>a</li>
+                    <li style="color: white;"> <i></i>b</li>
+                </ul>
+            </div>
+        </section>
+        <div class="py-1"></div>
+
+
+    </div>
+
+
+
+
 
 
 
@@ -423,8 +550,8 @@
                     nav: true
                 },
                 600: {
-                    items: 2,
-                    nav: false
+                    items: 1,
+                    nav: true
                 },
                 1000: {
                     items: 3,

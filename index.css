@@ -221,7 +221,7 @@ body {
     /* left: 50%; */
     /* transform: translate(-50%, -50%);*/
     /* width: 300px; */
-    height: 300px;
+    height: 500px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
     border-radius: 5px;
     background: #0e0e0f;
@@ -242,11 +242,13 @@ body {
 .specifies {
     position: absolute;
     width: 100%;
+    height: 100%;
     bottom: -160px;
     background: #fff;
-    padding: 10px;
+    padding: 35px;
     box-sizing: border-box;
-    transition: .5s
+    transition: .5s;
+    background-color: #e2e2e2;
 }
 
 .product:hover .specifies {
@@ -262,8 +264,15 @@ body {
 
 .specifies h2 span {
     font-size: 15px;
-    color: #ccc;
-    font-weight: normal
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+}
+
+.section5subheading {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .specifies .price {
@@ -293,7 +302,7 @@ ul li {
     margin: 5px 5px 0;
     font-size: 15px;
     font-style: normal;
-    color: #ccc
+    color: rgb(0, 0, 0)
 }
 
 ul li:first-child {
@@ -325,7 +334,8 @@ ul.colors li:nth-child(5) {
     background: #FF6D00
 }
 
-.btn {
+
+/* .btn {
     display: block;
     padding: 5px;
     color: #fff;
@@ -333,4 +343,16 @@ ul.colors li:nth-child(5) {
     width: 100%;
     font-size: 13px;
     border-radius: 2px
+} */
+
+.horizo-line {
+    /* display: inline-block; */
+    border-left: 1px solid #ccc;
+    height: 125px;
+}
+
+.vertical-line-card {
+    display: inline-block;
+    border-left: 1px solid #ccc;
+    height: 50px;
 }

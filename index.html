@@ -258,39 +258,48 @@
 
 
 
-    <section>
-        <div class="container" style="height: 100vh;">
+    <section style="height: 100vh;">
+        <div class="container">
+            <div class="pt-5 pb-5" style="display: flex; align-items: center; ">
+                <h1>FEATURED PROPOSALS</h1>
+                <hr style="height: 1px;">
+                <a class="text-decoration-none" href="">view more</a>
+            </div>
             <div class="owl-carousel owl-theme">
 
                 <div class="item bg-danger ">
                     <div class="product">
                         <div class="imgbox"> <img src="./homecontent/Investobanner.jpg"> </div>
                         <div class="specifies">
-                            <h2>Analog Watch <br> <span>Rolex</span></h2>
-                            <div class="price">$1500</div> <label>Size</label>
-                            <ul>
-                                <li>10MM</li>
-                                <li>20MM</li>
-                                <li>30MM</li>
+                            <h2>INVEST IN FREEHOLD COMMERCIAL LANDS IN DUBAI </h2><br>
+                            <div class="section5subheading"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea natus, asperiores est maxime nesciunt assumenda provident placeat perspiciatis porro velit quaerat at odio id, ratione quibusdam laborum temporibus animi harum.</span></div>
+                            <!-- <div class="price">$1500</div> <label>Size</label> -->
+                            <ul style="justify-content: space-evenly; border-bottom: 1px solid;">
+                                <li class="my-auto">10MM</li>
+                                <span class="vertical-line-card  mt-1 mb-2 d-none d-xl-block"></span>
+                                <li class="my-auto">20MM</li>
+                                <!-- <li>30MM</li>
                                 <li>40MM</li>
-                                <li>50MM</li>
-                            </ul> <label>Colors</label>
-                            <ul class="colors">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul> <button class="btn btn-primary">Buy Now</button>
+                                <li>50MM</li> -->
+                            </ul>
+                            <!-- <label>Colors</label> -->
+                            <ul class="justify-content-between">
+                                <li>Minimum Investment</li>
+                                <li style="float: right;">1000 AED</li>
+                            </ul>
+                            <ul class="justify-content-between">
+                                <li>Period of Investment</li>
+                                <li>5 Year</li>
+                            </ul>
+                            <ul class="justify-content-between">
+                                <li>Verified</li>
+                                <li>Yes</li>
+                            </ul>
+                            <button class="btn btn-primary">Buy Now</button>
                         </div>
                     </div>
                 </div>
-                <div class="item bg-info ">
-                    2
-                </div>
-                <div class="item bg-primary">
-                    1
-                </div>
+
             </div>
         </div>
 
@@ -399,11 +408,14 @@
 
     <!-- featuear data slider js -->
     <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
             items: 3,
+            loop: true,
             margin: 10,
             autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
             responsiveClass: true,
             responsive: {
                 0: {
@@ -411,16 +423,42 @@
                     nav: true
                 },
                 600: {
-                    items: 3,
+                    items: 2,
                     nav: false
                 },
                 1000: {
                     items: 3,
                     nav: true,
-                    loop: false
+                    // loop: false
                 }
             }
+        });
+        $('.play').on('click', function() {
+            owl.trigger('play.owl.autoplay', [5000])
         })
+        $('.stop').on('click', function() {
+                owl.trigger('stop.owl.autoplay')
+            })
+            // $('.owl-carousel').owlCarousel({
+            //     margin: 10,
+            //     autoplay: true,
+            //     responsiveClass: true,
+            //     responsive: {
+            //         0: {
+            //             items: 1,
+            //             nav: true
+            //         },
+            //         600: {
+            //             items: 3,
+            //             nav: false
+            //         },
+            //         1000: {
+            //             items: 3,
+            //             nav: true,
+            //             loop: false
+            //         }
+            //     }
+            // })
     </script>
 
 </body>

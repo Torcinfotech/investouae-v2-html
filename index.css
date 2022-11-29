@@ -87,7 +87,7 @@ body {
 
 .block-call-to-action2 {
     background-color: #fff;
-    padding-left: 50px;
+    padding-left: 10%;
     color: #fff;
     align-items: flex-start;
     background-position: 50%;
@@ -111,7 +111,7 @@ body {
 }
 
 .title {
-    font-size: 7rem;
+    font-size: 5vw;
     letter-spacing: 5px;
     margin-bottom: 10px;
     font-weight: 500;
@@ -126,13 +126,13 @@ body {
 }
 
 .below-title {
-    font-size: 8vw;
+    font-size: 6vw;
     line-height: .8;
     z-index: 2
 }
 
 .title2 {
-    font-size: 1.4vw;
+    font-size: 1rem;
     /* letter-spacing: 5px; */
     margin-bottom: 10px;
     font-weight: 500;
@@ -147,7 +147,7 @@ body {
 }
 
 .below-title2 {
-    font-size: 1.8vw;
+    font-size: 1.8rem;
     line-height: .8;
     z-index: 2
 }
@@ -177,8 +177,8 @@ body {
 }
 
 .blogs {
-    padding-top: 8%;
-    padding-bottom: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .section1content h3 {
@@ -1016,4 +1016,8 @@ label {
     border-color: #d28e22 !important;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(248, 179, 109, 0.374) !important;
+}
+
+.social {
+    font-size: 2rem;
 }

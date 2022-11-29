@@ -80,7 +80,7 @@
                     <a class="nav-link" href="#">BLOG<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://www.investouae.com/login" style="margin: 2px 5px;     color: #9a6909;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <a href="https://www.investouae.com/login" style="margin: 2px 5px; color: #9a6909;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
                         </svg></a>
                 </li>
@@ -99,14 +99,28 @@
     <!-- /.carousel -->
 
     <section>
-        <div id="banner-slider-demo-17" class="owl-caro owl-carousel owl-theme">
-            <div class="item slide block-call-to-action" style="background-image: url('./homecontent/Investobanner.jpg')">
+        <div id="banner-slider-demo-17" class="owl-caro owl-carousel ">
+            <div class="item slide block-call-to-action" style="background-image: url('./homecontent/Investobanner.jpg');">
                 <div class="black-gradient"></div>
-                <h1 class="below-title">Welcome</h1>
-                <h2 class="title" style="font-family: P13">to Investo</h2>
-                <a href="/collections/amoratm-stimulation-for-your-senses/amoratm-pure-essential-oils" class="btn call-to-action">
-                    SHOP NOW
-                </a>
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="below-title">Welcome</h1>
+                    </div>
+                    <div class="col-12">
+                        <h2 class="title" style="font-family: P13">to Investo</h2>
+                    </div>
+                    <div class="col-12 d-none d-xl-block">
+                        <a style="background-color: white; color: #000000; border-radius: 2rem;" href="/collections/amoratm-stimulation-for-your-senses/amoratm-pure-essential-oils" class="btn call-to-action px-4">
+                            SHOP NOW <span class="px-1"><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="d-xl-none">
+                    <a style="background-color: white; color: #000000; border-radius: 2rem; position: absolute; bottom: 0; right: 5vw;" href="/collections/amoratm-stimulation-for-your-senses/amoratm-pure-essential-oils" class="btn call-to-action px-4">
+                        SHOP NOW <span class="px-1"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
             </div>
             <div class="item slide block-call-to-action" style="background-image: url('./homecontent/stock.png')">
                 <div class="black-gradient"></div>
@@ -172,8 +186,8 @@
         <div class="row section2 m-0">
             <div class="col-xl-6 col-12 p-0 m-0 align-self-center">
                 <div class="container w-75 py-5 py-sm-0">
-                    <h1 class="text-white">LEASEHOLD PROPERTY VS FREEHOLD PROPERTY</h1>
-                    <p class="text-white">The most attractive feature of commercial real estate is its high-income potential, making it an enticing investment option for investors with a risk appetite. Historical evidence suggests that commercial buildings outperform rental
+                    <h1 class="text-white" style="font-family: p13;">LEASEHOLD PROPERTY VS FREEHOLD PROPERTY</h1>
+                    <p class="text-white" style="font-family: p10;">The most attractive feature of commercial real estate is its high-income potential, making it an enticing investment option for investors with a risk appetite. Historical evidence suggests that commercial buildings outperform rental
                         properties and other real estate investments in terms of returns. From this video, you can learn the properties, leasehold, and freehold properties and choose what works best for you</p>
                 </div>
             </div>
@@ -192,12 +206,24 @@
     <section>
         <div class="container section4">
             <div class="featured-p" style="display: flex; align-items: center; ">
-                <h1 style="font-family: P13;">FEATURED PROPOSALS</h1>
-                <img src="./homecontent/line.png" class="px-1" width="50%" alt="">
-                <div class="d-flex">
-                    <a style="color: #c78947; font-family: P13;" class="text-decoration-none" href="">view more</a>
-                    <p class="pl-2"><i class="arrow down"></i></p>
+
+                <div class="row" style="align-items: center;">
+                    <div class="col-xl-5 col-12 px-0 d-md-block d-flex text-center">
+                        <h1 style="font-family: P13;">FEATURED PROPOSALS</h1>
+                    </div>
+
+                    <div class="col-xl-4 d-none px-0 d-xl-block">
+                        <img src="./homecontent/line.png" style="width: 100%;" alt="">
+                    </div>
+                    <div class="col-xl-3 col-12 d-none d-xl-block">
+                        <div class="d-flex">
+                            <a style="color: #c78947; font-family: P13;" class="text-decoration-none" href="">view more</a>
+                            <p class="pl-2 m-0"><i class="arrow down"></i></p>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
             <div class="owl-one owl-carousel owl-theme">
                 <div class="item bg-danger ">
@@ -367,13 +393,24 @@
     <section>
         <div class="container section4">
             <div class="featured-p" style="display: flex; align-items: center; ">
-                <h1 style="font-family: P13;">COMPLETED PROPOSALS</h1>
-                <img src="./homecontent/line.png" class="px-1" width="50%" alt="">
-                <div class="d-flex">
-                    <a style="color: #c78947;" class="text-decoration-none" href="">view more</a>
-                    <p class="pl-2"><i class="arrow down"></i></p>
-                </div>
 
+
+                <div class="row" style="align-items: center;">
+                    <div class="col-xl-5 col-12 px-0 d-md-block d-flex text-center mx-sm-auto">
+                        <h1 style="font-family: P13;">COMPLETED PROPOSALS</h1>
+                    </div>
+
+                    <div class="col-xl-4 d-none px-0 d-xl-block">
+                        <img src="./homecontent/line.png" style="width: 100%;" alt="">
+                    </div>
+                    <div class="col-xl-3 col-12 d-none d-xl-block">
+                        <div class="d-flex">
+                            <a style="color: #c78947; font-family: P13;" class="text-decoration-none" href="">view more</a>
+                            <p class="pl-2 m-0"><i class="arrow down"></i></p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
             <div class="owl-two owl-carousel owl-theme">
                 <div class="item">
@@ -704,7 +741,7 @@
 
     <div class="container-fluid section6content">
         <div class="section6heading text-center">
-            <p class="mx-auto w-25">Experts growth</p>
+            <h4>Experts growth</h4>
             <h1 style="color: #c78947;" class="mx-auto w-75">Our Company Growth</h1>
             <h2>We have grown strength over the past 2 years.</h2>
 
@@ -715,32 +752,32 @@
                     <div class="col-xl-2 col-md-4 col-12 d-flex p-0 justify-content-center">
                         <div>
                             <img height="50px" width="50px" src="./homecontent/Growth/1.png" alt="">
-                            <h6>100%</h6>
-                            <p>GUARANTEED ROI</p>
+                            <p style="font-size: 2rem;">100%</p>
+                            <p style="font-size: 1rem;">GUARANTEED ROI</p>
                         </div>
                     </div>
                     <div class="vertical-line-section6 my-auto p-2 d-none d-md-block"></div>
                     <div class="col-xl-2 col-md-4 col-12 d-flex p-0 justify-content-center">
                         <div>
                             <img height="50px" width="50px" src="./homecontent/Growth/2.png" alt="">
-                            <h6>100%</h6>
-                            <p>NUMBER OF INVESTORS</p>
+                            <p style="font-size: 2rem;">100%</p>
+                            <p style="font-size: 1rem;">NUMBER OF INVESTORS</p>
                         </div>
                     </div>
                     <div class="vertical-line-section6 my-auto p-2 d-none d-xl-block"></div>
                     <div class="col-xl-2 col-md-4 col-12 d-flex p-0 justify-content-center">
                         <div>
                             <img height="50px" width="50px" src="./homecontent/Growth/3.png" alt="">
-                            <h6>43</h6>
-                            <p>YEARS OF TRUST</p>
+                            <p style="font-size: 2rem;">43</p>
+                            <p style="font-size: 1rem;">YEARS OF TRUST</p>
                         </div>
                     </div>
                     <div class="vertical-line-section6 my-auto p-2 d-none d-md-block"></div>
                     <div class="col-xl-2 col-md-4 col-12 d-flex p-0 justify-content-center">
                         <div>
                             <img height="50px" width="50px" src="./homecontent/Growth/4.png" alt="">
-                            <h6>100</h6>
-                            <p>CAPITAL SECURITY</p>
+                            <p style="font-size: 2rem;">100</p>
+                            <p style="font-size: 1rem;">CAPITAL SECURITY</p>
                         </div>
                     </div>
                     <div class="vertical-line-section6 my-auto p-2 d-none d-xl-block"></div>
@@ -750,127 +787,166 @@
     </div>
 
 
-    <div class="container-fluid section7content px-0">
+    <!-- <div class="container-fluid section7content px-0">
         <div class="section7heading text-center">
-            <h1 style="font-family: p3; font-size: 3vw;" class="mx-auto w-75">Diversify your portfolio</h1>
-            <p style="font-family: p13; font-size: 1vw;" class="mx-auto w-25">Discover thousands of assets, share ideas, disscuss strategies and beyond</p>
-        </div>
+            <div class="row p-0">
+                <div class="col-12 p-0">
+                    <h1 style="font-family: p3;" class="mx-auto w-75 p-0">Diversify your portfolio</h1>
 
-        <section>
-            <div class="ticker-wrap">
-                <div class="ticker">
-                    <div class="ticker__item text-danger">Authentic bitters seitan pug single-origin coffee whatever.
+                </div>
+                <div class="col-12 p-0">
+                    <div class="d-flex text-center">
+                        <p style="font-family: p13; " class="mx-auto w-100 p-0">Discover thousands of assets, share ideas,<br> disscuss strategies and beyond</p>
                     </div>
-                    <div class="ticker__item">
-                        <div class="vertical-line-section7 "></div>
-                    </div>
-                    <div class="ticker__item text-danger">Letterpress chambray brunch.</div>
-                    <div class="ticker__item">
-                        <div class="vertical-line-section7 "></div>
-                    </div>
-                    <div class="ticker__item text-danger">Vice mlkshk crucifix beard chillwave meditation hoodie asymmetrical Helvetica.</div>
-                    <div class="ticker__item">
-                        <div class="vertical-line-section7 "></div>
-                    </div>
-                    <div class="ticker__item text-danger">Ugh PBR&B kale chips Echo Park.</div>
-                    <div class="ticker__item">
-                        <div class="vertical-line-section7 "></div>
-                    </div>
-                    <div class="ticker__item text-danger">Gluten-free mumblecore chambray mixtape food truck. </div>
-                    <div class="ticker__item">
-                        <div class="vertical-line-section7 "></div>
-                    </div>
-                    <div class="ticker__item text-danger">Authentic bitters seitan pug single-origin coffee whatever.
-                    </div>
-                    <div class="ticker__item">
-                        <div class="vertical-line-section7 "></div>
-                    </div>
-                    <div class="ticker__item text-danger">Letterpress chambray brunch.</div>
-                    <div class="ticker__item">
-                        <div class="vertical-line-section7 "></div>
-                    </div>
-                    <div class="ticker__item text-danger">Vice mlkshk crucifix beard chillwave meditation hoodie asymmetrical Helvetica.</div>
-                    <div class="ticker__item">
-                        <div class="vertical-line-section7 "></div>
-                    </div>
-                    <div class="ticker__item text-danger">Ugh PBR&B kale chips Echo Park.</div>
-                    <div class="ticker__item">
-                        <div class="vertical-line-section7 "></div>
-                    </div>
-                    <div class="ticker__item text-danger">Gluten-free mumblecore chambray mixtape food truck. </div>
-                    <div class="ticker__item">
-                        <div class="vertical-line-section7 "></div>
-                    </div>
+
                 </div>
             </div>
-            <div class="py-1"></div>
-            <div class="ticker-wrap">
-                <div class="ticker">
-                    <div class="ticker__item text-success">Letterpress chambray brunch.</div>
-                    <div class="ticker__item">
-                        <div class="vertical-line-section7  "></div>
+
+        </div>
+    </div> -->
+
+    <section>
+        <div class="container" style="padding-top: 5%; padding-bottom: 5%;">
+            <div class="row">
+                <div class="col-12 p-0 d-flex text-center">
+                    <h1 style="font-family: p3;" class="mx-auto w-75 p-0">Diversify your portfolio</h1>
+
+                </div>
+                <div class="col-12 p-0">
+                    <div class="d-flex text-center">
+                        <p style="font-family: p13; " class="mx-auto w-100 p-0">Discover thousands of assets, share ideas,<br> disscuss strategies and beyond</p>
                     </div>
-                    <div class="ticker__item text-success">Vice mlkshk crucifix beard chillwave meditation hoodie asymmetrical Helvetica.</div>
-                    <div class="ticker__item">
-                        <div class="vertical-line-section7  "></div>
-                    </div>
-                    <div class="ticker__item text-success">Ugh PBR&B kale chips Echo Park.</div>
-                    <div class="ticker__item">
-                        <div class="vertical-line-section7  "></div>
-                    </div>
-                    <div class="ticker__item text-success">Gluten-free mumblecore chambray mixtape food truck. </div>
-                    <div class="ticker__item">
-                        <div class="vertical-line-section7  "></div>
-                    </div>
-                    <div class="ticker__item text-success">Authentic bitters seitan pug single-origin coffee whatever.
-                    </div>
-                    <div class="ticker__item">
-                        <div class="vertical-line-section7  "></div>
-                    </div>
-                    <div class="ticker__item text-success">Letterpress chambray brunch.</div>
-                    <div class="ticker__item">
-                        <div class="vertical-line-section7  "></div>
-                    </div>
-                    <div class="ticker__item text-success">Vice mlkshk crucifix beard chillwave meditation hoodie asymmetrical Helvetica.</div>
-                    <div class="ticker__item">
-                        <div class="vertical-line-section7  "></div>
-                    </div>
-                    <div class="ticker__item text-success">Ugh PBR&B kale chips Echo Park.</div>
-                    <div class="ticker__item">
-                        <div class="vertical-line-section7  "></div>
-                    </div>
-                    <div class="ticker__item text-success">Gluten-free mumblecore chambray mixtape food truck. </div>
-                    <div class="ticker__item">
-                        <div class="vertical-line-section7  "></div>
-                    </div>
-                    <div class="ticker__item text-success">Authentic bitters seitan pug single-origin coffee whatever.
-                    </div>
-                    <div class="ticker__item">
-                        <div class="vertical-line-section7  "></div>
-                    </div>
+
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="ticker-wrap">
+            <div class="ticker">
+                <div class="ticker__item text-danger"><span style="color: white;">Authentic bitters seitan </span> pug single-origin coffee whatever.
+                </div>
+                <div class="ticker__item">
+                    <div class="vertical-line-section7 "></div>
+                </div>
+                <div class="ticker__item text-danger"><span style="color: white;">Authentic bitters seitan </span> pug single-origin coffee whatever.
+                </div>
+                <div class="ticker__item">
+                    <div class="vertical-line-section7 "></div>
+                </div>
+                <div class="ticker__item text-danger"><span style="color: white;">Authentic bitters seitan </span> pug single-origin coffee whatever.
+                </div>
+                <div class="ticker__item">
+                    <div class="vertical-line-section7 "></div>
+                </div>
+                <div class="ticker__item text-danger"><span style="color: white;">Authentic bitters seitan </span> pug single-origin coffee whatever.
+                </div>
+                <div class="ticker__item">
+                    <div class="vertical-line-section7 "></div>
+                </div>
+                <div class="ticker__item text-danger"><span style="color: white;">Authentic bitters seitan </span> pug single-origin coffee whatever.
+                </div>
+                <div class="ticker__item">
+                    <div class="vertical-line-section7 "></div>
+                </div>
+                <div class="ticker__item text-danger"><span style="color: white;">Authentic bitters seitan </span> pug single-origin coffee whatever.
+                </div>
+                <div class="ticker__item">
+                    <div class="vertical-line-section7 "></div>
+                </div>
+                <div class="ticker__item text-danger"><span style="color: white;">Authentic bitters seitan </span> pug single-origin coffee whatever.
+                </div>
+                <div class="ticker__item">
+                    <div class="vertical-line-section7 "></div>
+                </div>
+
+                <div class="ticker__item text-danger">Letterpress chambray brunch.</div>
+                <div class="ticker__item">
+                    <div class="vertical-line-section7 "></div>
+                </div>
+            </div>
+        </div>
+        <div class="py-1"></div>
+        <div class="ticker-wrap">
+            <div class="ticker">
+                <div class="ticker__item text-success"><span style="color: white;">Authentic bitters seitan </span> pug single-origin coffee whatever.
+                </div>
+                <div class="ticker__item">
+                    <div class="vertical-line-section7 "></div>
+                </div>
+                <div class="ticker__item text-success"><span style="color: white;">Authentic bitters seitan </span> pug single-origin coffee whatever.
+                </div>
+                <div class="ticker__item">
+                    <div class="vertical-line-section7 "></div>
+                </div>
+                <div class="ticker__item text-success"><span style="color: white;">Authentic bitters seitan </span> pug single-origin coffee whatever.
+                </div>
+                <div class="ticker__item">
+                    <div class="vertical-line-section7 "></div>
+                </div>
+                <div class="ticker__item text-success"><span style="color: white;">Authentic bitters seitan </span> pug single-origin coffee whatever.
+                </div>
+                <div class="ticker__item">
+                    <div class="vertical-line-section7 "></div>
+                </div>
+                <div class="ticker__item text-success"><span style="color: white;">Authentic bitters seitan </span> pug single-origin coffee whatever.
+                </div>
+                <div class="ticker__item">
+                    <div class="vertical-line-section7 "></div>
+                </div>
+                <div class="ticker__item text-success"><span style="color: white;">Authentic bitters seitan </span> pug single-origin coffee whatever.
+                </div>
+                <div class="ticker__item">
+                    <div class="vertical-line-section7 "></div>
+                </div>
+                <div class="ticker__item text-success"><span style="color: white;">Authentic bitters seitan </span> pug single-origin coffee whatever.
+                </div>
+                <div class="ticker__item">
+                    <div class="vertical-line-section7 "></div>
+                </div>
+                <div class="ticker__item text-success"><span style="color: white;">Authentic bitters seitan </span> pug single-origin coffee whatever.
+                </div>
+                <div class="ticker__item">
+                    <div class="vertical-line-section7 "></div>
+                </div>
+                <div class="ticker__item text-success"><span style="color: white;">Authentic bitters seitan </span> pug single-origin coffee whatever.
+                </div>
+                <div class="ticker__item">
+                    <div class="vertical-line-section7 "></div>
+                </div>
+                <div class="ticker__item text-danger"><span style="color: white;">Authentic bitters seitan </span> pug single-origin coffee whatever.
+                </div>
+                <div class="ticker__item">
+                    <div class="vertical-line-section7 "></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section>
 
 
 
         <div class="row item slide block-call-to-action2 mx-0" style="background-image: url('./homecontent/stock.png'); text-align: left;">
-            <div class="col-12 col-xl-5 ">
-                <div class="black-gradient"></div>
-                <p style="font-family: p3;" class="below-title2">Invest in your favourite stocks.</p>
-                <p class="title2">Enjoy 0% commission and fractional shares.</p>
-                <div class="d-flex justify-content-between py-3">
-                    <button class="px-4 py-1" style="color: white; background-color: #000000; border-color: #c78947; border-radius: 1rem;">Start Investing</button>
-                    <a class="text-white" href=""><u class="pb-5">More about stocks</u></a>
-                </div>
+            <div class="container-fluid">
+                <div class="col-12 col-xl-4 ">
+                    <div class="black-gradient"></div>
+                    <p style="font-family: p3;" class="below-title2">Invest in your favourite stocks.</p>
+                    <p class="title2">Enjoy 0% commission and fractional shares.</p>
+                    <div class="d-flex justify-content-between py-3">
+                        <a class="px-4 py-1 btn" style="color: white; background-color: #000000; border-color: #c78947; border-radius: 1rem;">Start Investing</a>
+                        <a class="text-white" href=""><u class="pb-5">More about stocks</u></a>
+                    </div>
 
-                <a class="text-white" href="/collections/amoratm-stimulation-for-your-senses/amoratm-pure-essential-oils" class="text-white">
-                    Investo ARS 637 489 466. Zero-commission means that no <br> broker fee will be charged when opening or closing the position <br> and does not apply to short or leveraged position. <br> Limited stock exchanges only.
-                </a>
+                    <a class="text-white" href="/collections/amoratm-stimulation-for-your-senses/amoratm-pure-essential-oils">
+                        Investo ARS 637 489 466. Zero-commission means that no <br> broker fee will be charged when opening or closing the position <br> and does not apply to short or leveraged position. <br> Limited stock exchanges only.
+                    </a>
+                </div>
             </div>
+
         </div>
 
     </section>
@@ -889,13 +965,13 @@
                                 <div class="photo-background"></div>
                                 <div class="photo-details d-flex">
                                     <div class="my-auto">
-                                        <h1>Lorem ipsum</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sodales elementum mi non hendrerit. Proin tempor facilisis felis nec ultrices. Duis nec ultrices neque. Proin semper ultricies turpis, vel faucibus velit
+                                        <h1 style="font-family: p13;">Lorem ipsum</h1>
+                                        <p style="font-family: p13;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sodales elementum mi non hendrerit. Proin tempor facilisis felis nec ultrices. Duis nec ultrices neque. Proin semper ultricies turpis, vel faucibus velit
                                             sodales vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  </p>
                                         <div class="photo-tags ">
                                             <ul style="justify-content: space-between;">
-                                                <li class="text-white">Jasmin</li>
-                                                <li class="text-white">24 August 2022</li>
+                                                <li style="font-family: p13;" class="text-white">Jasmin</li>
+                                                <li style="font-family: p13;" class="text-white">24 August 2022</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -907,13 +983,13 @@
                                 <div class="photo-background"></div>
                                 <div class="photo-details d-flex">
                                     <div class="my-auto">
-                                        <h1>Lorem ipsum</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sodales elementum mi non hendrerit. Proin tempor facilisis felis nec ultrices. Duis nec ultrices neque. Proin semper ultricies turpis, vel faucibus velit
+                                        <h1 style="font-family: p13;">Lorem ipsum</h1>
+                                        <p style="font-family: p13;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sodales elementum mi non hendrerit. Proin tempor facilisis felis nec ultrices. Duis nec ultrices neque. Proin semper ultricies turpis, vel faucibus velit
                                             sodales vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  </p>
                                         <div class="photo-tags ">
                                             <ul style="justify-content: space-between;">
-                                                <li class="text-white">Jasmin</li>
-                                                <li class="text-white">24 August 2022</li>
+                                                <li style="font-family: p13;" class="text-white">Jasmin</li>
+                                                <li style="font-family: p13;" class="text-white">24 August 2022</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -930,33 +1006,16 @@
 
             <div class="row pt-3">
                 <div class="col-xl-4 col-12 ">
-                    <div class="container ">
+                    <div class="container" style="padding-top: 10%;">
                         <div class="photo-card-2" style="background-image: url( './homecontent/Investobanner.jpg'); background-size: cover; background-position: center; ">
                             <div class="photo-background-2 "></div>
                             <div class="photo-details-2 ">
-                                <h1>Lorem ipsum</h1>
-                                <p>Lorem ipsum dolor sit amet, </p>
+                                <h1 style="font-family: p13;">Lorem ipsum</h1>
+                                <p style="font-family: p13;">Lorem ipsum dolor sit amet, </p>
                                 <div class="photo-tags-2 ">
                                     <ul style="justify-content: space-between;">
-                                        <li>Jasmin</li>
-                                        <li>24 August 2022</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 px-0 col-12 ">
-                    <div class="container ">
-                        <div class="photo-card-2" style="background-image: url( './homecontent/Investobanner.jpg'); background-size: cover; background-position: center; ">
-                            <div class="photo-background-2 "></div>
-                            <div class="photo-details-2 ">
-                                <h1>Lorem ipsum</h1>
-                                <p>Lorem ipsum dolor sit amet, </p>
-                                <div class="photo-tags-2 ">
-                                    <ul style="justify-content: space-between;">
-                                        <li>Jasmin</li>
-                                        <li>24 August 2022</li>
+                                        <li style="font-family: p13;">Jasmin</li>
+                                        <li style="font-family: p13;">24 August 2022</li>
                                     </ul>
                                 </div>
                             </div>
@@ -964,7 +1023,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-12 ">
-                    <div class="container ">
+                    <div class="container" style="padding-top: 10%;">
                         <div class="photo-card-2" style="background-image: url( './homecontent/Investobanner.jpg'); background-size: cover; background-position: center; ">
                             <div class="photo-background-2 "></div>
                             <div class="photo-details-2 ">
@@ -972,8 +1031,25 @@
                                 <p>Lorem ipsum dolor sit amet, </p>
                                 <div class="photo-tags-2 ">
                                     <ul style="justify-content: space-between;">
-                                        <li>Jasmin</li>
-                                        <li>24 August 2022</li>
+                                        <li style="font-family: p13;">Jasmin</li>
+                                        <li style="font-family: p13;">24 August 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12 ">
+                    <div class="container" style="padding-top: 10%;">
+                        <div class="photo-card-2" style="background-image: url( './homecontent/Investobanner.jpg'); background-size: cover; background-position: center; ">
+                            <div class="photo-background-2 "></div>
+                            <div class="photo-details-2 ">
+                                <h1>Lorem ipsum</h1>
+                                <p>Lorem ipsum dolor sit amet, </p>
+                                <div class="photo-tags-2 ">
+                                    <ul style="justify-content: space-between;">
+                                        <li style="font-family: p13;">Jasmin</li>
+                                        <li style="font-family: p13;">24 August 2022</li>
                                     </ul>
                                 </div>
                             </div>
@@ -1034,36 +1110,11 @@
     <!-- END OF TESTIMONIALS -->
 
 
-    <!-- <section class="p-0">
-        <div class="container-fluid" style="background-image: url('./homecontent/sectioncontact.png');">
-            <div id="info-container" class="container py-5">
-                <div class="row mx-0">
-                    <div id="contact-box" class="col-12 col-sm-6 col-md-6" style="align-self: center;">
-                        <p style="font-size: 3rem;
-                        font-weight: 500; width: 75%;">Download our brochure & learn how to safely & securely invest with us. </p>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-6 site-form">
-                        <form id="my-form">
-                            <div class="form-group"><label class="sr-only" for="firstname">First Name</label><input id="firstname" class="form-control" type="text" name="firstname" placeholder="First Name" autofocus /></div>
-                            <div class="form-group"><label class="sr-only" for="lastname">Last Name</label><input id="lastname" class="form-control" type="text" name="lastname" placeholder="Last Name" /></div>
-                            <div class="form-group"><label class="sr-only" for="phonenumber">Phone Number</label><input id="phonenumber" class="form-control" type="tel" name="phonenumber" required placeholder="Phone" /></div>
-                            <div class="form-group"><label class="sr-only" for="email">Email Address</label><input id="email" class="form-control" type="text" name="email" required placeholder="Email" /></div>
-                            <div class="form-group"><label class="sr-only" for="messages">Last Name</label><textarea class="form-control" name="messages" required placeholder="Message" rows="8"></textarea></div><button id="form-btn" class="btn btn-light btn-lg" type="submit">SEND </button>
-                        </form>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <section class="p-0">
         <div class="container-fluid py-5" style="background-image: url('./homecontent/sectioncontact.png');">
             <div id="info-container" class=" py-5">
                 <div class="row">
-                    <!-- <div class="col-md-12">
-                    <h2 class="text-center text-info">Contact Us</h2>
-                </div> -->
                     <div id="contact-box" class="col-12 col-sm-12 col-md-6 px-5" style="align-self: center;">
                         <p style="font-size: 4rem;
                         font-weight: 500; width: 75%; color: #c68841; line-height: 4rem; letter-spacing: 8px;">How can we help you </p>
@@ -1138,11 +1189,11 @@
                     <div>
                         <h2>Support Media</h2>
                         <ul class="d-flex footer-icons px-0" style=" list-style-type: none;">
-                            <li class="px-1"><a style="color: white; text-decoration: none;" href="https://www.facebook.com/investo.ae"><i class="fab fa-facebook-square"></i></a> </li>
-                            <li class="px-1"><a style="color: white; text-decoration: none;" href="https://www.instagram.com/investouae/"><i class="fab fa-instagram"></i></a></li>
-                            <li class="px-1"><a style="color: white; text-decoration: none;" href="https://www.linkedin.com/company/10076028/admin/"><i class="fab fa-linkedin-in"></i></a> </li>
-                            <li class="px-1"><a style="color: white; text-decoration: none;" href="https://www.youtube.com/channel/UCGwMPDSfjICvMoCCbYWOuBA"><i class="fab fa-youtube"></i></a> </li>
-                            <li class="px-1"><a style="color: white; text-decoration: none;" href="https://twitter.com/investodubai"><i class="fab fa-twitter"></i></a> </li>
+                            <li class="px-1 social"><a style="color: white; text-decoration: none;" href="https://www.facebook.com/investo.ae"><i class="fab fa-facebook-square"></i></a> </li>
+                            <li class="px-1 social"><a style="color: white; text-decoration: none;" href="https://www.instagram.com/investouae/"><i class="fab fa-instagram"></i></a></li>
+                            <li class="px-1 social"><a style="color: white; text-decoration: none;" href="https://www.linkedin.com/company/10076028/admin/"><i class="fab fa-linkedin-in"></i></a> </li>
+                            <li class="px-1 social"><a style="color: white; text-decoration: none;" href="https://www.youtube.com/channel/UCGwMPDSfjICvMoCCbYWOuBA"><i class="fab fa-youtube"></i></a> </li>
+                            <li class="px-1 social"><a style="color: white; text-decoration: none;" href="https://twitter.com/investodubai"><i class="fab fa-twitter"></i></a> </li>
                         </ul>
                     </div>
 
@@ -1255,10 +1306,9 @@
                 items: 1,
                 autoplay: true,
                 autoplayTimeout: 5000,
-                nav: false,
-                dots: true,
-                navRewind: true,
-                navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+                // nav: false,
+                // navRewind: true,
+                // navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
                 animateIn: 'fadeIn',
                 animateOut: 'fadeOut',
                 loop: true

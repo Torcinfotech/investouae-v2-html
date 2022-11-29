@@ -51,6 +51,26 @@ body {
     border-radius: 0 !important;
 }
 
+.dropdown-menu-last {
+    position: absolute;
+    top: 59px !important;
+    left: 30% !important;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: 0.125rem -40px 0 !important;
+    font-size: 1rem;
+    color: #ffffff !important;
+    text-align: center !important;
+    list-style: none;
+    background: #343a40!important;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 0 !important;
+}
+
 .dropdown-item {
     display: block;
     width: 100%;
@@ -182,7 +202,7 @@ body {
 }
 
 .section1content h3 {
-    padding-top: 5%;
+    padding-top: 3%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -246,12 +266,20 @@ body {
 /* data silder */
 
 .section4 {
-    padding-bottom: 50px;
+    padding-bottom: 1%;
+}
+
+.section4-2 {
+    padding-bottom: 1%;
 }
 
 .featured-p {
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 8%;
+    padding-bottom: 5%;
+}
+
+.featured-p2 {
+    padding-bottom: 5%;
 }
 
 .down {
@@ -466,13 +494,18 @@ label {
     border-bottom-left-radius: 0px !important;
     background-color: #000 !important;
     border-color: #000 !important;
-    b
 }
 
 .horizo-line {
     /* display: inline-block; */
     border-left: 1px solid #ccc;
     height: 125px;
+}
+
+.horizo-line-footer {
+    /* display: inline-block; */
+    border-left: 1px solid #ccc;
+    height: 10px;
 }
 
 .vertical-line-card {
@@ -535,8 +568,8 @@ label {
 }
 
 .section6sub1 img {
-    height: 30px;
-    width: 40px;
+    height: ;
+    width: ;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -690,7 +723,7 @@ label {
 
 .photo-card {
     background-color: #2d3638;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     display: flex;
     flex-direction: column;
@@ -709,16 +742,16 @@ label {
 .photo-background {
     background-position: center;
     background-size: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
     min-height: 500px;
 }
 
 @media screen and (min-width: 700px) {
     .photo-background {
-        border-top-left-radius: 10px;
+        /* border-top-left-radius: 10px;
         border-top-right-radius: 0;
-        border-bottom-left-radius: 10px;
+        border-bottom-left-radius: 10px; */
         min-height: none;
         width: 50%;
     }

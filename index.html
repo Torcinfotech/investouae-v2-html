@@ -31,7 +31,7 @@
       -->
 
     <nav class="navbar navbar-expand-md fixed-top navbar-dark nav-gradient pb-0 pt-0">
-        <a class="navbar-brand pb-0 pt-0 ml-5" href="#"><img class="index-logo" id="index-logo" src="./homecontent/logo2.png" alt=""></a>
+        <a class="navbar-brand pb-0 pt-0 ml-5" href="#"><img class="index-logo" id="index-logo" src="./homecontent/logo2.png" height="80px" width="100%" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -1293,7 +1293,21 @@
             navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
             animateIn: 'fadeIn',
             animateOut: 'fadeOut',
-            loop: true
+            loop: true,
+            responsiveBaseElement: 'body',
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2,
+                    nav: true,
+                },
+                1000: {
+                    items: 3
+
+                }
+            }
         });
 
 

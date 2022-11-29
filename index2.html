@@ -272,18 +272,18 @@
             */
             $(window).scroll(function() {
                 if ($(window).scrollTop() > 56) {
-                    $(".navbar ").addClass("bg-dark ");
+                    $(".navbar ").addClass("v2-bg-dark ");
                 } else {
-                    $(".navbar ").removeClass("bg-dark ");
+                    $(".navbar ").removeClass("v2-bg-dark ");
                 }
             });
             // If Mobile, add background color when toggler is clicked
             $(".navbar-toggler ").click(function() {
                 if (!$(".navbar-collapse ").hasClass("show ")) {
-                    $(".navbar ").addClass("bg-dark ");
+                    $(".navbar ").addClass("v2-bg-dark ");
                 } else {
                     if ($(window).scrollTop() < 56) {
-                        $(".navbar ").removeClass("bg-dark ");
+                        $(".navbar ").removeClass("v2-bg-dark ");
                     } else {}
                 }
             });

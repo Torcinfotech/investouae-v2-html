@@ -1,0 +1,35 @@
+.v2below-titlepro {
+    font-weight: 300;
+    text-align: left
+}
+
+.v2below-titlepro {
+    font-size: 5vw;
+    line-height: .8;
+    z-index: 2
+}
+
+.v2titlepro {
+    font-size: 5vw;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-align: left;
+    z-index: 2
+}
+
+.v2block-call-to-actionpro {
+    background-color: #fff;
+    padding-left: 50px;
+    color: #fff;
+    align-items: flex-start;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: end;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 100vh;
+}

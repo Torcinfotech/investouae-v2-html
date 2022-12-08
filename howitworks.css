@@ -1,23 +1,35 @@
-div.jumbotron.hero-technology {
+.hero-technology {
     color: #fff;
-    text-align: center;
+    text-align: end;
     background: url('hero-background-technology.jpg');
     background-size: cover;
-    background-position: center top;
+    background-position: 50%;
     padding-top: 100px;
     padding-bottom: 100px;
     background-attachment: local;
+    display: flex;
 }
 
-h1.hero-title,
+.how-title {
+    font-size: 5vw;
+    font-family: p13;
+}
+
+.how-sub {
+    font-size: 1.5vw;
+}
+
+
+/* h1.hero-title,
 h2.hero-title,
 h3.hero-title {
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
     color: #fff;
     font-weight: 500;
-}
+} */
 
-p.hero-subtitle {
+
+/* p.hero-subtitle {
     max-width: 600px;
     margin: 25px auto;
     padding: 10px 15px;
@@ -25,7 +37,7 @@ p.hero-subtitle {
     color: #fff;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
     font-weight: 500;
-}
+} */
 
 .vl {
     border-left: 1px solid rgb(0, 0, 0);

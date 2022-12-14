@@ -233,7 +233,9 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="specifies">
+                            <img src="./homecontent/Triangle.png" style="position: relative; height: 20px; width: 20px; margin-top: -35px;" alt="">
                             <h2 style="font-family: P13;">Invest in Freehold Comercial Land in Dubai </h2><br>
                             <div class="section5subheading1" style="font-family: P10;">
                                 <p class="" id="myid" style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea natus, asperiores est maxime nesciunt assumenda provident placeat perspiciatis porro velit quaerat at odio id, ratione quibusdam laborum temporibus animi harum.</p>
@@ -669,11 +671,12 @@
         </div>
         <div>
             <div class="container-fluid section6sub1 w-75">
-                <div class="row" style="justify-content: space-evenly;">
+                <div class="row counterUp" style="justify-content: space-evenly;">
                     <div class="col-xl-2 col-md-4 col-12 d-flex p-0 justify-content-center">
                         <div>
                             <img src="./homecontent/Growth/1-e.png" alt="">
-                            <p style="font-size: 2rem; padding-top: 3px; padding-bottom: 1px;">100%</p>
+                            <p style="font-size: 2rem; padding-top: 3px; padding-bottom: 1px;"><span class="num" data-val="100">
+                            </span>+</p>
                             <p style="font-size: 1rem;">GUARANTEED ROI</p>
                         </div>
                     </div>
@@ -681,7 +684,8 @@
                     <div class="col-xl-2 col-md-4 col-12 d-flex p-0 justify-content-center">
                         <div>
                             <img src="./homecontent/Growth/2-e.png" alt="">
-                            <p style="font-size: 2rem; padding-top: 3px;">100%</p>
+                            <p style="font-size: 2rem; padding-top: 3px;"><span class="num" data-val="100">
+                            </span>%</p>
                             <p style="font-size: 1rem;">NUMBER OF INVESTORS</p>
                         </div>
                     </div>
@@ -689,7 +693,8 @@
                     <div class="col-xl-2 col-md-4 col-12 d-flex p-0 justify-content-center">
                         <div>
                             <img src="./homecontent/Growth/3-e.png" alt="">
-                            <p style="font-size: 2rem; padding-top: 3px; padding-bottom: 1px;">43</p>
+                            <p style="font-size: 2rem; padding-top: 3px; padding-bottom: 1px;"> <span class="num" data-val="43">
+                            </span></p>
                             <p style="font-size: 1rem;">YEARS OF TRUST</p>
                         </div>
                     </div>
@@ -697,7 +702,8 @@
                     <div class="col-xl-2 col-md-4 col-12 d-flex p-0 justify-content-center">
                         <div>
                             <img src="./homecontent/Growth/4-e.png" alt="">
-                            <p style="font-size: 2rem; padding-top: 3px; padding-bottom: 1px;">100</p>
+                            <p style="font-size: 2rem; padding-top: 3px; padding-bottom: 1px;"><span class="num" data-val="100">
+                            </span>%</p>
                             <p style="font-size: 1rem;">CAPITAL SECURITY</p>
                         </div>
                     </div>
@@ -1091,7 +1097,7 @@
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 site-form my-auto px-5">
                         <form id="my-form" class="px-5">
-                            <div class="form-group"><label class="sr-only" style="font-family: p13;" for="firstname">Full Name</label><input id="firstname" class="form-control" type="text" name="firstname" placeholder="Full Name" autofocus /></div>
+                            <div class="form-group"><label class="sr-only" style="font-family: p13;" for="firstname">Full Name</label><input id="firstname" class="form-control" type="text" name="firstname" placeholder="Full Name" /></div>
                             <div class="form-group"><label class="sr-only" style="font-family: p13;" for="email">Email Address</label><input id="email" class="form-control" type="text" name="email" required placeholder="Email" /></div>
                             <div class="form-group"><label class="sr-only" style="font-family: p13;" for="phonenumber">Phone Number</label><input id="phonenumber" class="form-control" type="tel" name="phonenumber" required placeholder="Phone" /></div>
                             <button id="form-btn" class="btn bton5 btn-dark btn-lg w-100" style="border-radius:2rem ; font-family: p13;" type="submit">Download </button>
@@ -1183,6 +1189,9 @@
         </div>
     </section>
 
+
+
+
     <script type="text/javascript">
         var myid = document.getElementById('myid');
         myid.innerHTML = myid.innerHTML.substring(0, 80) + '...';
@@ -1218,6 +1227,42 @@
     <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js ">
     </script>
 
+    <script>
+        //++++++++++++++ Counter +++++++++++++
+        // trigger number run js code
+        const counterSection = document.querySelector(".counterUp");
+        const scrollOnView = new IntersectionObserver(
+            (entries, observer) => {
+                const [entry] = entries;
+                console.log(entry);
+
+                if (!entry.isIntersecting) return;
+
+                // number run js code
+                let valueDisplays = document.querySelectorAll(".num");
+                let interval = 4000;
+                valueDisplays.forEach((valueDisplay) => {
+                    let startValue = 0;
+                    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+                    let duration = Math.floor(interval / endValue);
+                    let counter = setInterval(function() {
+                        startValue += 1;
+                        valueDisplay.textContent = startValue;
+                        if (startValue == endValue) {
+                            clearInterval(counter);
+                        }
+                    }, duration);
+                });
+
+                observer.unobserve(counterSection);
+            }, {
+                root: null,
+                threshhold: 0,
+            }
+        );
+
+        scrollOnView.observe(counterSection);
+    </script>
     <script>
         $(document).ready(function() {
             // executes when HTML-Document is loaded and DOM is ready

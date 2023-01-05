@@ -1,0 +1,12 @@
+{
+    "folders": [
+		{
+			"name": "Torc Investo New",
+			"path": "."
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "Torc Investo New",
+        "liveServer.settings.port": 5501
+    }
+}

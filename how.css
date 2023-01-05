@@ -1,0 +1,69 @@
+    .how-section1 {
+        height: 100vh;
+        background-size: cover;
+    }
+    
+    .how-section1 h1 {
+        font-size: 5rem;
+        color: white;
+    }
+    
+    .how-section1 h6 {
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+    .how-section1-content {
+        padding-bottom: 10%;
+    }
+    /* .vl-r {
+    border-left: 1px solid rgb(0, 0, 0);
+    height: 150px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+} */
+    
+    .rotate {
+        transform: rotate(90deg);
+        /* transform-origin: left top */
+    }
+    
+    .work-section2 h1 {
+        font-size: 3.5rem;
+    }
+    
+    .work-section2 h6 {
+        font-size: 1.2rem;
+    }
+    
+    .work-section4 h1 {
+        font-size: 3.5rem;
+    }
+    
+    .work-section4 h6 {
+        font-size: 1.2rem;
+    }
+    
+    @media only screen and (max-width:600px) {
+        .how-section1 h1 {
+            font-size: 2rem;
+        }
+        .sub-work-1 h6 {
+            font-size: 1rem;
+        }
+        .work-section2 h6 {
+            font-size: 1rem;
+        }
+        .work-section4 h6 {
+            font-size: 1rem;
+        }
+        .work-section2 h1 {
+            font-size: 2rem;
+        }
+        .work-section4 h1 {
+            font-size: 2rem;
+        }
+    }
